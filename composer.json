@@ -1,0 +1,22 @@
+{
+    "name": "qlimix/router",
+    "type": "library",
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Frank",
+            "email": "frank@qlimix.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Qlimix\\Router\\": "src/"
+        }
+    },
+    "require": {
+        "psr/http-server-handler": "^1.0"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
