@@ -12,5 +12,5 @@ interface RouterInterface
      * @throws RouteNotFoundException
      * @throws RouterException
      */
-    public function route(ServerRequestInterface $request): RoutableRequest;
+    public function route(ServerRequestInterface $request): RouteRequestHandler;
 }
