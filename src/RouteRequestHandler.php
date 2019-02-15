@@ -6,23 +6,29 @@ use Psr\Http\Message\ServerRequestInterface;
 
 final class RouteRequestHandler
 {
-    /** @var ServerRequestInterface */
+    /** @var mixed */
     private $handler;
 
     /** @var ServerRequestInterface */
     private $request;
 
-    public function __construct(ServerRequestInterface $handler, ServerRequestInterface $request)
+    public function __construct($handler, ServerRequestInterface $request)
     {
         $this->handler = $handler;
         $this->request = $request;
     }
 
-    public function getHandler(): ServerRequestInterface
+    /**
+     * @return mixed
+     */
+    public function getHandler()
     {
         return $this->handler;
     }
 
+    /**
+     * @return ServerRequestInterface
+     */
     public function getRequest(): ServerRequestInterface
     {
         return $this->request;
