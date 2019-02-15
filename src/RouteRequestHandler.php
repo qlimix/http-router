@@ -3,32 +3,27 @@
 namespace Qlimix\Router;
 
 use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\RequestHandlerInterface;
 
 final class RouteRequestHandler
 {
-    /** @var mixed */
+    /** @var RequestHandlerInterface */
     private $handler;
 
     /** @var ServerRequestInterface */
     private $request;
 
-    public function __construct($handler, ServerRequestInterface $request)
+    public function __construct(RequestHandlerInterface $handler, ServerRequestInterface $request)
     {
         $this->handler = $handler;
         $this->request = $request;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getHandler()
+    public function getHandler(): RequestHandlerInterface
     {
         return $this->handler;
     }
 
-    /**
-     * @return ServerRequestInterface
-     */
     public function getRequest(): ServerRequestInterface
     {
         return $this->request;
