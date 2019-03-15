@@ -5,7 +5,7 @@ namespace Qlimix\Router\Locator;
 use Psr\Http\Server\RequestHandlerInterface;
 use Qlimix\Router\Locator\Exception\LocatorException;
 
-interface RouteLocatorInterface
+interface LocatorInterface
 {
     /**
      * @throws LocatorException
