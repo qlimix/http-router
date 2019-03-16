@@ -2,13 +2,14 @@
 
 namespace Qlimix\Router\Locator;
 
-use Psr\Http\Server\RequestHandlerInterface;
 use Qlimix\Router\Locator\Exception\LocatorException;
 
 interface LocatorInterface
 {
     /**
+     * @return mixed
+     *
      * @throws LocatorException
      */
-    public function locate(string $route): RequestHandlerInterface;
+    public function locate(string $route);
 }
