@@ -1,7 +1,7 @@
 {
-    "name": "qlimix/router",
+    "name": "qlimix/http-router",
     "type": "library",
-    "license": "LGPL-3.0-only",
+    "license": "MIT",
     "authors": [
         {
             "name": "Frank",
@@ -10,11 +10,20 @@
     ],
     "autoload": {
         "psr-4": {
-            "Qlimix\\Router\\": "src/"
+            "Qlimix\\Http\\Router\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Qlimix\\Tests\\Http\\Router\\": "tests/"
         }
     },
     "require": {
+        "php": "^7.4",
         "psr/http-server-handler": "^1.0"
+    },
+    "require-dev": {
+        "qlimix/code-standard": "^2.0"
     },
     "config": {
         "sort-packages": true
