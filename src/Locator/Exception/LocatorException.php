@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\Router\Locator\Exception;
+namespace Qlimix\Http\Router\Locator\Exception;
 
 use Exception;
 
