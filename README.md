@@ -1,5 +1,7 @@
 # HTTP-Router
 
+> **Archived:** this package is no longer maintained.
+
 [![Travis CI](https://api.travis-ci.org/qlimix/http-router.svg?branch=master)](https://travis-ci.org/qlimix/http-router)
 [![Coveralls](https://img.shields.io/coveralls/github/qlimix/http-router.svg)](https://coveralls.io/github/qlimix/http-router)
 [![Packagist](https://img.shields.io/packagist/v/qlimix/http-router.svg)](https://packagist.org/packages/qlimix/http-router)
